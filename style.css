@@ -1,0 +1,17 @@
+/* style.css */
+
+body {
+    /*text-align: center;  Center-align the text */
+    margin: 0; /* Remove default margin for body element */
+    padding: 0; /* Remove default padding for body element */
+}
+  
+h1 {
+    margin-top: 0; /* Optional: Add some top margin for better spacing */
+    border: 2px solid #333; /* Add a 2px solid border with a dark gray color */
+    padding: 30px;  /* Add padding inside the border for better spacing */
+    /*border-radius: 10px;  Make the corners of the border round */
+    background-color: rgb(46, 46, 77); /* Set the background color to navy */
+    color: white /* Set the text color to white */
+}
+
