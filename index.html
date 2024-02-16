@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Beyond Lubricants</title>
+
 </head>
 
 <body>
     <header>
 
         <div class="header">
-            <img src="logo-icon.png" alt="Beyond Lubricants Logo" class="logo">
+            <img src="pictures/logo-icon.png" alt="Beyond Lubricants Logo" class="logo">
             <div class="search-box">
                 <input type="text" name="search" placeholder="Search...">
                 <button type="submit">Search</button>
@@ -21,14 +23,14 @@
 
             <div class="header-right">
                 <div class="login">
-                    <a href="#">
-                        <img src="profile-icon.png" alt="Login profile">
+                    <a href="#" onclick="showLoginArea()">
+                        <img src="pictures/profile-icon.png" alt="Login profile">
                     </a>
                 </div>
 
                 <div class="cart">
                     <a href="#">
-                        <img src="cart-icon.png" alt="Shopping cart">
+                        <img src="pictures/cart-icon.png" alt="Shopping cart">
                     </a>
                 </div>
             </div>
@@ -40,8 +42,25 @@
         <div class="device">Home</div>
     </div>
 
-    <img src="picture.png" alt="Beyond Lubricants Image">
+    <!-- <img src="pictures/picture.png" alt="Beyond Lubricants Image"> -->
 
+    <hr class="thin-line">
+    
+
+    <div id="itemList" class="item-list"></div>
+
+    <div id="loginArea" class="login-area" style="display: none;">
+        <!-- Login area content -->
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <button onclick="hideLoginArea()">Close</button>
+    </div>
+    
     <footer>
         <p>Contact us: beyondlubricants@gmail.com | Phone: 066-092-3214</p>
         <p>&copy; 2024 Beyond Lubricants. All rights reserved.</p>
